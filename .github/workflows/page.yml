@@ -13,7 +13,7 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: neo2271/github-pages-deploy-action@1.0.0
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: master
           folder: .
