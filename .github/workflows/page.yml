@@ -11,7 +11,7 @@ jobs:
         run: |
           cat README.md | sh
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+        uses: actions/upload-artifact@v2
         with:
-          branch: master
-          folder: .
+          name: static-resources
+          path: .
